@@ -1,0 +1,30 @@
+$(document).ready(function(){
+    $('.projet1').hide();
+    $('.projet2').hide();
+    $('.projet3').hide();
+    $('#bg_tanatos').on({
+		'mouseover':function(){
+			$('.projet1').show();
+            $('.projet1').css('color','white');
+		},
+		'mouseleave':function(){
+			$('.projet1').hide();
+		}
+	});
+    $('#bg_resto').on({
+		'mouseover':function(){
+			$('.projet2').show();
+		},
+		'mouseleave':function(){
+			$('.projet2').hide();
+		}
+	});
+    $('#bg_gstock').on({
+		'mouseover':function(){
+			$('.projet3').show();
+		},
+		'mouseleave':function(){
+			$('.projet3').hide();
+		}
+	});
+})

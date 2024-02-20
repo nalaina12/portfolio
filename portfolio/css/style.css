@@ -1,0 +1,252 @@
+body{
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+#headder{
+    background-color: #343a40;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+#back_home{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url('../images/image1.jpg');
+    background-size: 100% 100%;
+}
+#logo{
+    color: white;
+    font-size: 70px;
+    font-family: Kunstler Script;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo{
+    position: fixed;
+    top: 8px;
+    left: 80px;
+    font-size: 18px;
+    width: 110px;
+    height: 110px;
+    font-weight: bold;
+    border-radius: 100%;
+    background-color: rgb(240, 15, 240);   
+    z-index: 2;
+}
+.link{
+    text-transform: uppercase;
+    color: white!important;
+    font-weight: bold;
+    float: right;
+}
+.link:hover, .link:focus{
+    color:rgb(240, 15, 240)!important ;
+}
+#name, #function{
+    font-size: 90px;
+    font-family: Kunstler Script;
+    text-transform: capitalize;
+    font-weight: bolder;
+    text-shadow: 4px 0px #b97a56;
+}
+#name span{
+    color:  rgb(240, 15, 240);
+}
+#about_me{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* section 1 */
+.title{
+    font-size: 50px!important;
+    margin-bottom: 50px;
+}
+.title, h2{
+    text-shadow: 2px 0px rgb(240, 15, 240);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.paragraphe{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+/* section 2 competence */
+#language , .projet_front, #contact{
+    background-color: #b97a56;
+}
+h2{
+    font-size: 30px!important;
+}
+.degree, #envoyer{
+    background-color: rgb(240, 15, 240);
+}
+.text_uppercaise{
+    text-transform: uppercase;
+}
+#language p, #framework p{
+    text-transform: capitalize;
+}
+/* section 3 portfolio */
+#bg_tanatos, #bg_resto{
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background-size: 100% 100%;
+}
+#bg_tanatos{
+    background-image: url("../images/tanatosstudio.png");
+}
+#bg_resto{
+    background-image: url("../images/templeteResto.png");
+}
+#bg_gstock{
+    background-image: url("../images/gstock.PNG");
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    background-size: 100% 100%;
+}
+.projet1:hover, .projet2:hover{
+    background-color: #343a40;
+    width: 100%;
+    height: 300px;
+    color: white;
+    border-radius: 15px;
+}
+.projet3:hover{
+    background-color: #343a40;
+    width: 100%;
+    height: 450px;
+    color: white;
+    border-radius: 15px;
+}
+.list{
+    list-style-type: none;
+    font-size: 20px!important;
+}
+.fa-check-double{
+    font-size: 20px!important;
+    color: rgb(240, 15, 240)!important;
+}
+/* section 4 contact  */
+input{
+    width: 100%!important;
+}
+#envoyer{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/* footer */
+#footer{
+    background-color: #343a40;
+}
+.icone{
+    font-size: 30px;
+}
+/* responsive */
+/* @media all and (max-width:1300px){
+    .logo{
+        left: 100px ;
+    }
+} */
+@media all and (max-width:992px) {
+    #logo{
+        font-size: 50px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .link{
+        font-size: 15px!important;
+    }
+}
+@media all  and (max-width : 768px) { 
+    #logo{
+        font-size: 50px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .link{
+        font-size: 15px!important;
+    }
+    #name, #function{
+        font-size: 70px;
+    }
+    .title{
+        font-size: 40px!important;
+    }
+    h2{
+        font-size: 25px!important;
+    }
+    #resto{
+        margin-top: 20px!important;
+    }
+    #bg_gstock{
+        height: 300px;
+    }
+    .projet3:hover{
+        height: 300px;
+    }
+    .projet3 p{
+        padding-top: 10px!important;
+    }
+}
+@media all and (max-width:700px){
+    .logo{
+        left: 60px!important;
+    }
+}
+@media all and (max-width:404px){
+    #logo{
+        font-size: 40px;
+    }
+    .logo{
+        left: 30px!important;
+        width: 62px;
+        height: 62px;
+    }
+    #name, #function{
+        font-size: 50px!important;
+    }
+    .title{
+        font-size: 30px!important;
+    }
+    h2{
+        font-size: 20px!important;
+    }
+    p, .content_footer, .contenu_contact, .projet3, .projet2, .projet1, .list, .fa-check-double, .link_project, .placeholer, #envoyer {
+        font-size: 15px!important;
+    }
+    .content_footer {
+        display: flex!important;
+        flex-direction: column!important;
+    }
+}
+@media all and (max-width:260px) {
+    #name, #function{
+        font-size: 40px!important;
+    }
+    .title{
+        font-size: 25px!important;
+    }
+    h2{
+        font-size: 20px!important;
+    }
+    p, .content_footer, .contenu_contact, .projet3, .projet2, .projet1, .list, .fa-check-double , .link_project, .placeholer, #envoyer {
+        font-size: 10px!important;
+    }
+    #bg_resto, #bg_gstock, #bg_tanatos, .projet1:hover, .projet2:hover, .projet3:hover {
+        height: 200px!important;  
+    }  
+}
